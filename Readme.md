@@ -2,14 +2,14 @@
 \*(Computer Aided Engineering - typically referring to electronics CAD software)  
 
 ## Requirements:
-- [x] Docker
+- [x] [Docker](https://www.docker.com/products/overview#/install_the_platform)
 
 ## Usage:
 
 Note: **On the first build** , a base containers with all the linux tools and libraries will be created.
 On further invocations, the docker image will be reused.
 
-`build clean` - This will remove all the containers and images created by this script. Your other Docker containers and Docker images will be untouched.  
+`build clean` - This will remove all the Docker containers and images created **by this script only**. Your other Docker containers and images will be untouched.  
 `build iverilog` - Build the icarus verilog simulator.  
 `build yosys` - Build the yosys synthesis tools.  
 `build arachne` - Build the arachne place & route tool for the ice40HX family, *plus* the required icstorm tools.  
