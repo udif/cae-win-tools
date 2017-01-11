@@ -21,5 +21,12 @@ if x%1x == xarachnex (
 	rem docker run -t -i -v %cd%://out udif/arachne-win bash -c "cp -p `ls -1 */*.zip` /out"
 )
 if x%1x == xcleanx (
-	for /f %%a in ('docker ps -a -q') do docker rm %%a
+	docker rm icarus_win
+	docker rm yposys_win
+	docker rm arachne_win
+	docker rmi udif/icarus-win
+	docker rmi udif/yosys-win
+	docker rmi udif/arachne-win
+	docker rmi udif/cae-build-base
+	rem for /f %%a in ('docker ps -a -q') do docker rm %%a
 )

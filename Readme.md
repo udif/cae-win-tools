@@ -9,7 +9,7 @@
 Note: **On the first build** , a base containers with all the linux tools and libraries will be created.
 On further invocations, the docker image will be reused.
 
-`build clean` - **Warning!** This will remove all your local Docker containers, if any. Docker images will be left as-is.  
+`build clean` - This will remove all the containers and images created by this script. Your other Docker containers and Docker images will be untouched.  
 `build iverilog` - Build the icarus verilog simulator.  
 `build yosys` - Build the yosys synthesis tools.  
 `build arachne` - Build the arachne place & route tool for the ice40HX family, *plus* the required icstorm tools.  
