@@ -2,7 +2,7 @@ FROM udif/cae-build-base
 MAINTAINER Udi Finkelstein <github@udifink.com>
 
 RUN \
-git clone https://github.com/udif/icestorm.git && \
+git clone https://github.com/cliffordwolf/icestorm.git && \
   git clone https://github.com/FPGAwars/toolchain-icestorm.git && \
   cp -pR toolchain-icestorm/build-data/windows/include/*/*.h /usr/local/include && \
   cp -pR toolchain-icestorm/build-data/windows/lib/* /usr/local/lib && \

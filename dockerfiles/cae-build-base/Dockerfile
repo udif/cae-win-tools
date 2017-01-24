@@ -12,7 +12,7 @@ RUN \
   autoconf \
   bison \
 #  chrpath \
-#  cmake \
+  cmake \
 #  curl \
 #  dialog \
 #  dos2unix \
@@ -36,10 +36,10 @@ RUN \
   pkg-config \
   python3 \
 #  python-dev \
-#  subversion \
+   subversion \
    tcl-dev \
 #  wget \
   xdot \
-#  xz-utils \
+  xz-utils \
   zip
 

@@ -3,7 +3,7 @@ MAINTAINER Udi Finkelstein <github@udifink.com>
 
 # RUN git clone https://github.com/udif/iverilog.git && cd iverilog && git checkout cross_compile && autoconf && ./configure --host=x86_64-w64-mingw32 && make && sudo make install
 
-RUN git clone https://github.com/udif/yosys.git && cd yosys && make config-mxe && \
+RUN git clone https://github.com/cliffordwolf/yosys.git && cd yosys && make config-mxe && \
   mkdir -p /usr/local/src/mxe/usr/bin && \
   ln -s /usr/bin/i686-w64-mingw32-gcc /usr/local/src/mxe/usr/bin/i686-w64-mingw32.static-gcc && \
   ln -s /usr/bin/i686-w64-mingw32-g++ /usr/local/src/mxe/usr/bin/i686-w64-mingw32.static-g++ && \
