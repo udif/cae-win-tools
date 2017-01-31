@@ -13,7 +13,7 @@ RUN \
   bison \
 #  chrpath \
   cmake \
-#  curl \
+  curl \
 #  dialog \
 #  dos2unix \
   flex \
